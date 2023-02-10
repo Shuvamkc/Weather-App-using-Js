@@ -1,4 +1,4 @@
-\const Key = `16d9ea0132915be2e323a80702d726ed`;
+const Key = `16d9ea0132915be2e323a80702d726ed`;
 
 function isPureString(city) {
   city = city.trim();
