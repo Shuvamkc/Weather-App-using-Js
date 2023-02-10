@@ -1,4 +1,4 @@
-const Key = `16d9ea0132915be2e323a80702d726ed`;
+\const Key = `16d9ea0132915be2e323a80702d726ed`;
 
 function isPureString(city) {
   city = city.trim();
@@ -13,6 +13,17 @@ function submit() {
     alert("Enter Valid city name");
     document.getElementById("in1").value = "";
     document.getElementById("in1").focus();
+    const Temperature = document.getElementById("temperature");
+    const Pressure = document.getElementById("pressure");
+    const Humidity = document.getElementById("humidity");
+    const Cloud = document.getElementById("cloud");
+    const Country = document.getElementById("country");
+
+    Temperature.innerText = ``;
+    Cloud.innerText = ``;
+    Pressure.innerText = ``;
+    Humidity.innerText = ``;
+    Country.innerText = ``;
   }
 }
 
