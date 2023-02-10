@@ -1,8 +1,19 @@
 const Key = `16d9ea0132915be2e323a80702d726ed`;
 
+function isPureString(city) {
+  city = city.trim();
+  return typeof city === "string" && !/^\d+$/.test(city) && city.length > 0;
+}
+
 function submit() {
   const city = document.getElementById("in1").value;
-  getWeather(city);
+  if (isPureString(city)) {
+    getWeather(city);
+  } else {
+    alert("Enter Valid city name");
+    document.getElementById("in1").value = "";
+    document.getElementById("in1").focus();
+  }
 }
 
 const getWeather = async (city) => {
