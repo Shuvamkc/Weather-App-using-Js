@@ -10,7 +10,7 @@ function submit() {
   if (isPureString(city)) {
     getWeather(city);
   } else {
-    alert("Enter Valid city name");
+    alert("Enter Valid City Name");
     document.getElementById("in1").value = "";
     document.getElementById("in1").focus();
     const Temperature = document.getElementById("temperature");
@@ -53,7 +53,7 @@ const setWeather = (data) => {
     Country.innerText = `Country : ${data.sys.country}`;
   } catch (error) {
     document.getElementById("temperature").innerText = "City Not Found";
-    document.getElementById("pressure").innerText = "Try again";
+    document.getElementById("pressure").innerText = "Try Again";
     document.getElementById("humidity").innerText = "";
     document.getElementById("cloud").innerText = "";
     document.getElementById("country").innerText = "";
